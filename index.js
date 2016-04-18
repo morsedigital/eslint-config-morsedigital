@@ -1,6 +1,9 @@
 module.exports = {
   "parser": "babel-eslint",
   "extends": "google",
+  "plugins": [
+    "react"
+   ],
    "env": {
     "browser": true,
     "es6": true,
