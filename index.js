@@ -40,7 +40,7 @@ module.exports = {
     }],
     "quotes": [1, "single", "avoid-escape"],
     "new-cap": [0],
-    "one-var": [1, "always"],
+    "one-var": [0, "always"],
     "no-console":[2],
     "no-undef":[1], //Because of react work around
     "no-underscore-dangle":[0],
