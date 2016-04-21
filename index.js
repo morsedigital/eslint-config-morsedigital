@@ -2,7 +2,8 @@ module.exports = {
   "parser": "babel-eslint",
   "extends": "google",
   "plugins": [
-    "react"
+    'jasmine'
+    , "react"
    ],
    "env": {
     "browser": true,
