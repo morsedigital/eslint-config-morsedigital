@@ -1,14 +1,14 @@
 {
   "name": "eslint-config-morsedigital",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Morse Digital Eslint rules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/djforth/eslint-config-morsedigital.git"
+    "url": "git+https://github.com/djforth/eslint-config-morsedigital.git",
+    "type": "git"
   },
   "keywords": [
     "Eslint"
@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/djforth/eslint-config-morsedigital#readme",
   "dependencies": {
-    "babel-eslint": "^6.0.2",
-    "eslint": "^2.8.0",
-    "eslint-config-google": "^0.5.0",
-    "eslint-plugin-react": "^5.0.1",
-    "eslint-plugin-jasmine": "^1.8.1"
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.7.1",
+    "eslint-config-google": "^0.6.0",
+    "eslint-plugin-jasmine": "^1.8.1",
+    "eslint-plugin-react": "^6.4.1"
   }
 }
