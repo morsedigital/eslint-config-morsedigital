@@ -25,7 +25,7 @@ module.exports = {
     "templateStrings": true,
     "jsx": true
   },
-  , "parserOptions": {
+  "parserOptions": {
     "ecmaVersion": 8 // or 2017
     "sourceType": "module",
     "allowImportExportEverywhere": false
