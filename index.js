@@ -4,6 +4,7 @@ module.exports = {
   "plugins": [
     'jasmine'
     , "react"
+    , "jsx-a11y"
    ],
    "env": {
     "browser": true,
@@ -24,6 +25,11 @@ module.exports = {
     "templateStrings": true,
     "jsx": true
   },
+  , "parserOptions": {
+    "ecmaVersion": 8 // or 2017
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  }
   "rules": {
     "arrow-parens":[2, "always"],
     "arrow-spacing": [2, { "before": false, "after": false }],
@@ -50,5 +56,7 @@ module.exports = {
     "no-unused-vars": [1],
     "no-use-before-define": [2, "nofunc"],
     "space-before-blocks":[1, "never"]
+    "react/jsx-uses-vars": 1,
+    "require-jsdoc": 0
   }
 };
