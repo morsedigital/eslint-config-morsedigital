@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-morsedigital",
-  "version": "1.2.3",
-  "description": "Morse Digital Eslint rules",
+  "name": "eslint-config-morsedigital-jest",
+  "version": "1.0.0",
+  "description": "Morse Digital Eslint rules with jest",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,9 +22,10 @@
   "homepage": "https://github.com/djforth/eslint-config-morsedigital#readme",
   "dependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.7.1",
+    "eslint": "3.16.1",
     "eslint-config-google": "~0.7.1",
-    "eslint-plugin-jasmine": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.4.1"
   }
 }

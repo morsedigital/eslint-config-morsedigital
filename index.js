@@ -2,15 +2,14 @@ module.exports = {
   'parser': 'babel-eslint'
   , 'extends': 'google'
   , 'plugins': [
-    'jasmine'
+    'jest'
     , 'react'
     , 'jsx-a11y'
    ]
    , 'env': {
     'browser': true
     , 'es6': true
-    , 'jasmine': true
-    , 'node': true,
+    , 'jest': true
   }
   , 'ecmaFeatures': {
     'arrowFunctions': true
@@ -47,6 +46,13 @@ module.exports = {
       , 'requireReturnDescription': false,
     }]
     , 'quotes': [1, 'single', 'avoid-escape']
+    , 'max-len': ['error', {
+      'ignoreTrailingComments': true
+      , 'ignoreUrls': true
+      , 'ignoreStrings': true
+      , 'ignoreTemplateLiterals': true
+      , 'ignoreRegExpLiterals': true
+    }]
     , 'new-cap': [0]
     , 'one-var': [0, 'always']
     , 'no-console': [2]
