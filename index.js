@@ -4,7 +4,7 @@ module.exports = {
   , 'plugins': [
     'jasmine'
     , 'react'
-    , 'jsx-a11y'
+    // , 'jsx-a11y'
    ]
    , 'env': {
     'browser': true
@@ -12,23 +12,24 @@ module.exports = {
     , 'jasmine': true
     , 'node': true,
   }
-  , 'ecmaFeatures': {
-    'arrowFunctions': true
-    , 'blockBindings': true
-    , 'classes': true
-    , 'defaultParams': true
-    , 'destructuring': true
-    , 'forOf': true
-    , 'generators': true
-    , 'modules': true
-    , 'spread': true
-    , 'templateStrings': true
-    , 'jsx': true,
-  }
+
   , 'parserOptions': {
     'ecmaVersion': 8 // or 2017
     , 'sourceType': 'module'
-    , 'allowImportExportEverywhere': false,
+    , 'allowImportExportEverywhere': false
+    , 'ecmaFeatures': {
+      // 'arrowFunctions': true
+      // , 'blockBindings': true
+      // , 'classes': true
+      // , 'defaultParams': true
+      // , 'destructuring': true
+      // , 'forOf': true
+      // , 'generators': true
+      // , 'modules': true
+      // , 'spread': true
+      // , 'templateStrings': true
+      , 'jsx': true,
+    }
   }
   , 'rules': {
     'arrow-parens': [2, 'always']
