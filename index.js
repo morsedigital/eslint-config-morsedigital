@@ -28,7 +28,7 @@ module.exports = {
       // , 'modules': true
       // , 'spread': true
       // , 'templateStrings': true
-      , 'jsx': true,
+      'jsx': true
     }
   }
   , 'rules': {
