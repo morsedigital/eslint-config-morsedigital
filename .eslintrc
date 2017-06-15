@@ -5,8 +5,6 @@
   "env": {
     "node": true
   },
-  "ecmaFeatures": {
-  },
   "parserOptions": {
   },
   "rules": {
