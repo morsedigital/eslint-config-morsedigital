@@ -11,23 +11,26 @@ module.exports = {
     , 'es6': true
     , 'jest': true
   }
-  , 'ecmaFeatures': {
-    'arrowFunctions': true
-    , 'blockBindings': true
-    , 'classes': true
-    , 'defaultParams': true
-    , 'destructuring': true
-    , 'forOf': true
-    , 'generators': true
-    , 'modules': true
-    , 'spread': true
-    , 'templateStrings': true
-    , 'jsx': true,
-  }
+  // , 'ecmaFeatures': {
+  //   'arrowFunctions': true
+  //   , 'blockBindings': true
+  //   , 'classes': true
+  //   , 'defaultParams': true
+  //   , 'destructuring': true
+  //   , 'forOf': true
+  //   , 'generators': true
+  //   , 'modules': true
+  //   , 'spread': true
+  //   , 'templateStrings': true
+  //   , 'jsx': true,
+  // }
   , 'parserOptions': {
     'ecmaVersion': 8 // or 2017
     , 'sourceType': 'module'
-    , 'allowImportExportEverywhere': false,
+    , 'allowImportExportEverywhere': false
+    , 'ecmaFeatures': {
+      'jsx': true
+    }
   }
   , 'rules': {
     'arrow-parens': [2, 'always']
