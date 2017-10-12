@@ -1,20 +1,34 @@
 {
   "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "classes": true,
+    }
+  },
   "extends": "google",
   "plugins": [],
   "env": {
+    "browser": true,
+    "jasmine": true, 
     "node": true
   },
   "parserOptions": {
   },
   "rules": {
+    "no-unused-vars": [
+      1,
+      {
+        "argsIgnorePattern": "res|next|^err"
+      }
+    ],
     "no-alert":[0],
     "brace-style": [0],
     "camelcase": [0],
     "comma-dangle": [0, "never"],
     "comma-spacing": [1, {"before": false, "after": true}],
-    "comma-style": [2, "first"],
-
     "consistent-return": [0],
     "curly": [2, "multi-line"],
     "keyword-spacing": [1, {"before": true, "after": true, "overrides": {}}],
@@ -22,7 +36,14 @@
       "requireReturnType": false,
       "requireReturnDescription": false
     }],
-    "quotes": [1, "single", "avoid-escape"],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
     "new-cap": [0],
     "one-var": [0, "always"],
     "no-console":[2],
@@ -32,6 +53,7 @@
     "no-shadow": [0],
     "no-unused-vars": [1],
     "no-use-before-define": [2, "nofunc"],
+    "radix": 0,
     "space-before-blocks":[1, "never"]
   }
 }
