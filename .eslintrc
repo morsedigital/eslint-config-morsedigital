@@ -15,7 +15,7 @@
   "env": {
     "browser": true,
     "node": true,
-    "jasmine": true
+    "jest": true
   },
   "rules": {
     "no-unused-vars": [
