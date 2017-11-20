@@ -1,72 +1,80 @@
 module.exports = {
-  'parser': 'babel-eslint'
-  , 'extends': 'google'
-  , 'plugins': [
-    'jest'
-    , 'react'
-    , 'jsx-a11y'
-   ]
-   , 'env': {
-    'browser': true
-    , 'es6': true
-    , 'jest': true
-  }
-  // , 'ecmaFeatures': {
-  //   'arrowFunctions': true
-  //   , 'blockBindings': true
-  //   , 'classes': true
-  //   , 'defaultParams': true
-  //   , 'destructuring': true
-  //   , 'forOf': true
-  //   , 'generators': true
-  //   , 'modules': true
-  //   , 'spread': true
-  //   , 'templateStrings': true
-  //   , 'jsx': true,
-  // }
-  , 'parserOptions': {
-    'ecmaVersion': 8 // or 2017
-    , 'sourceType': 'module'
-    , 'allowImportExportEverywhere': false
-    , 'ecmaFeatures': {
-      'jsx': true
-    }
-  }
-  , 'rules': {
-    'arrow-parens': [2, 'always']
-    , 'arrow-spacing': [2, {'before': false, 'after': false}]
-    , 'no-alert': [0]
-    , 'brace-style': [0]
-    , 'camelcase': [0]
-    , 'comma-dangle': [0, 'never']
-    , 'comma-spacing': [1, {'before': false, 'after': true}]
-    , 'comma-style': [2, 'first']
-    , 'consistent-return': [0]
-    , 'curly': [2, 'multi-line']
-    , 'keyword-spacing': [1, {'before': true, 'after': true, 'overrides': {}}]
-    , 'valid-jsdoc': [1, {
-      'requireReturnType': false
-      , 'requireReturnDescription': false,
-    }]
-    , 'quotes': [1, 'single', 'avoid-escape']
-    , 'max-len': ['error', {
-      'ignoreTrailingComments': true
-      , 'ignoreUrls': true
-      , 'ignoreStrings': true
-      , 'ignoreTemplateLiterals': true
-      , 'ignoreRegExpLiterals': true
-    }]
-    , 'new-cap': [0]
-    , 'one-var': [0, 'always']
-    , 'no-console': [2]
-    , 'no-undef': [1] // Because of react work around
-    , 'no-underscore-dangle': [0]
-    , 'no-multi-spaces': [0]
-    , 'no-shadow': [0]
-    , 'no-unused-vars': [1]
-    , 'no-use-before-define': [2, 'nofunc']
-    , 'space-before-blocks': [1, 'never']
-    , 'react/jsx-uses-vars': 1
-    , 'require-jsdoc': 0,
+  extends: ['prettier'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      impliedStrict: true,
+      classes: true,
+    },
   },
+  env: {
+    browser: true,
+    node: true,
+    jest: true,
+  },
+  rules: {
+    'no-unused-vars': [
+      1,
+      {
+        argsIgnorePattern: 'res|next|^err',
+      },
+    ],
+    'arrow-body-style': [2, 'as-needed'],
+    'no-param-reassign': [
+      2,
+      {
+        props: false,
+      },
+    ],
+    'no-console': 0,
+    import: 0,
+    'func-names': 0,
+    'space-before-function-paren': 0,
+    'comma-dangle': 0,
+    'max-len': 0,
+    'import/extensions': 0,
+    'import/first': [
+      'error',
+      {
+        'absolute-first': false,
+      },
+    ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+        peerDependencies: true,
+      },
+    ],
+    'no-underscore-dangle': 0,
+    'consistent-return': 0,
+    radix: 0,
+    'no-shadow': [
+      2,
+      {
+        hoist: 'all',
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
+      },
+    ],
+    quotes: [
+      2,
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true,
+      },
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'es5',
+        singleQuote: true,
+        printWidth: 120,
+      },
+    ],
+  },
+  plugins: ['import', 'prettier'],
 };
