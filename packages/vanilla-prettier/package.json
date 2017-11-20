@@ -4,8 +4,7 @@
   "description": "Morse Digital Eslint rules with jest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint react-prettier/index.js vanilla-prettier/index.js --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "url": "git+https://github.com/djforth/eslint-config-morsedigital.git",
@@ -27,8 +26,6 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.3.2",
     "eslint-plugin-prettier": "^2.3.1",
-    "global": "^4.3.2",
-    "lerna": "^2.5.1",
     "prettier": "^1.8.2",
     "prettier-eslint": "^8.2.2"
   }
