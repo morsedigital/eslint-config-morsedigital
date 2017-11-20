@@ -7,6 +7,7 @@ module.exports = {
       experimentalObjectRestSpread: true,
       impliedStrict: true,
       classes: true,
+      "jsx": true
     },
   },
   env: {
