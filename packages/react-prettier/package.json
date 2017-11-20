@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-morsedigital-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Morse Digital Eslint rules with react, jest & prettier",
   "main": "index.js",
   "scripts": {
