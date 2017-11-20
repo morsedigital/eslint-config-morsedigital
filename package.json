@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-morsedigital-prettier",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Morse Digital Eslint rules with jest",
   "main": "index.js",
   "scripts": {
