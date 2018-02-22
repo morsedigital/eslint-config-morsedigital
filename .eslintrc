@@ -1,7 +1,7 @@
 {
   "extends": [
     "google",
-    "prettier",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
