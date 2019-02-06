@@ -1,0 +1,101 @@
+module.exports = {
+  extends: ["prettier"],
+  parser: "babel-eslint",
+  parserOptions: {
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      impliedStrict: true,
+      classes: true
+    }
+  },
+  env: {
+    browser: true,
+    node: true,
+    jest: true
+  },
+  rules: {
+    "no-unused-vars": [
+      1,
+      {
+        argsIgnorePattern: "res|next|^err"
+      }
+    ],
+    "arrow-body-style": [2, "as-needed"],
+    "no-param-reassign": [
+      2,
+      {
+        props: false
+      }
+    ],
+    "no-debugger": 0,
+    "no-console": 0,
+    "no-await-in-loop": 0,
+    "no-return-assign": ["error", "except-parens"],
+    "no-restricted-syntax": [
+      2,
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "prefer-const": [
+      "error",
+      {
+        destructuring: "all"
+      }
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        props: false
+      }
+    ],
+    import: 0,
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "comma-dangle": 0,
+    "max-len": 0,
+    "import/extensions": 0,
+    "import/first": [
+      "error",
+      {
+        "absolute-first": false
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+        peerDependencies: true
+      }
+    ],
+    "no-underscore-dangle": 0,
+    "consistent-return": 0,
+    radix: 0,
+    "no-shadow": [
+      2,
+      {
+        hoist: "all",
+        allow: ["resolve", "reject", "done", "next", "err", "error"]
+      }
+    ],
+    quotes: [
+      2,
+      "single",
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        trailingComma: "es5",
+        singleQuote: true,
+        printWidth: 120
+      }
+    ]
+  },
+  plugins: ["import", "prettier"]
+};

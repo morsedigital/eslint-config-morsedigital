@@ -1,0 +1,12 @@
+{
+  "lerna": "2.9.0",
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "npmClientArgs": [
+    "--production",
+    "--no-optional"
+  ],
+  "version": "2.0.2-0"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-morsedigital-react",
+  "version": "2.0.2-0",
+  "description": "Morse Digital Eslint rules with react, jest & prettier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "git+https://github.com/djforth/eslint-config-morsedigital.git",
+    "type": "git"
+  },
+  "keywords": [
+    "Eslint"
+  ],
+  "author": "A Stainforth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djforth/eslint-config-morsedigital/issues"
+  },
+  "homepage": "https://github.com/djforth/eslint-config-morsedigital#readme",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "~5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-morsedigital-prettier": "^2.0.2-0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.2",
+    "prettier": "^1.15.3",
+    "prettier-eslint": "^8.8.2"
+  }
+}

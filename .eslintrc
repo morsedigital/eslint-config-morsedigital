@@ -1,4 +1,8 @@
 {
+  "extends": [
+    "google",
+    "prettier"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 8,
@@ -8,14 +12,10 @@
       "classes": true,
     }
   },
-  "extends": "google",
-  "plugins": [],
   "env": {
     "browser": true,
-    "jasmine": true, 
-    "node": true
-  },
-  "parserOptions": {
+    "node": true,
+    "jest": true
   },
   "rules": {
     "no-unused-vars": [
@@ -24,18 +24,42 @@
         "argsIgnorePattern": "res|next|^err"
       }
     ],
-    "no-alert":[0],
-    "brace-style": [0],
-    "camelcase": [0],
-    "comma-dangle": [0, "never"],
-    "comma-spacing": [1, {"before": false, "after": true}],
-    "consistent-return": [0],
-    "curly": [2, "multi-line"],
-    "keyword-spacing": [1, {"before": true, "after": true, "overrides": {}}],
-    "valid-jsdoc": [1, {
-      "requireReturnType": false,
-      "requireReturnDescription": false
-    }],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "no-console": 0,
+    "import": 0,
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "comma-dangle": 0,
+    "max-len": 0,
+    "import/extensions": 0,
+    "import/first": [0, {"absolute-first":false}],
+    "import/no-extraneous-dependencies": [0, {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}],
+    "no-underscore-dangle": 0,
+    "consistent-return": 0,
+    "radix": 0,
+    "no-shadow": [
+      2,
+      {
+        "hoist": "all",
+        "allow": [
+          "resolve",
+          "reject",
+          "done",
+          "next",
+          "err",
+          "error"
+        ]
+      }
+    ],
     "quotes": [
       2,
       "single",
@@ -44,16 +68,18 @@
         "allowTemplateLiterals": true
       }
     ],
-    "new-cap": [0],
-    "one-var": [0, "always"],
-    "no-console":[2],
-    "no-undef":[1], //Because of react work around
-    "no-underscore-dangle":[0],
-    "no-multi-spaces": [0],
-    "no-shadow": [0],
-    "no-unused-vars": [1],
-    "no-use-before-define": [2, "nofunc"],
-    "radix": 0,
-    "space-before-blocks":[1, "never"]
-  }
+    "require-jsdoc": [0],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ],
+    "valid-jsdoc": [0]
+  },
+  "plugins": [
+    "prettier"
+  ]
 }
