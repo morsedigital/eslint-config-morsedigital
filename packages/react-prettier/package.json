@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-morsedigital-react",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Morse Digital Eslint rules with react, jest & prettier",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.7.0",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0"
