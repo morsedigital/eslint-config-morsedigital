@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react"],
+  extends: [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:you-dont-need-lodash-underscore/compatible"
+  ],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 8,

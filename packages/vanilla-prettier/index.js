@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["prettier"],
+  extends: ["prettier", "plugin:you-dont-need-lodash-underscore/compatible"],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 8,
