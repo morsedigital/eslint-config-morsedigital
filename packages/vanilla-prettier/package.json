@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-morsedigital-prettier",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Morse Digital Eslint rules with jest",
   "main": "index.js",
   "scripts": {
@@ -21,13 +21,13 @@
   "homepage": "https://github.com/djforth/eslint-config-morsedigital#readme",
   "dependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "~6.5.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.17.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.7.0",
-    "prettier": "^1.18.2",
-    "prettier-eslint": "^9.0.0"
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.9.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1"
   }
 }
